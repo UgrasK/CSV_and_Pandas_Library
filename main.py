@@ -11,4 +11,10 @@
 import pandas
 
 data = pandas.read_csv("weather-data.csv")
-print(data["temp"])
+# print(data["temp"])
+
+# this prints Pandas Dataframe
+print(type(data))
+
+# this prints Pandas Series
+print(type(data["temp"]))
