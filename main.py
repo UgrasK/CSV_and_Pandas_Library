@@ -33,3 +33,7 @@ print(average)
 
 # finding average temperature with series methods
 print(data["temp"].mean())
+
+# these are the same
+print(data["condition"])
+print(data.condition)
