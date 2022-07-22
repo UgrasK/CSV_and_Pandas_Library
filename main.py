@@ -14,7 +14,22 @@ data = pandas.read_csv("weather-data.csv")
 # print(data["temp"])
 
 # this prints Pandas Dataframe
-print(type(data))
+# print(type(data))
 
 # this prints Pandas Series
-print(type(data["temp"]))
+# print(type(data["temp"]))
+
+# turn dataframe into a dictionary
+data_dict = data.to_dict()
+print(data_dict)
+
+# turn series into a list
+temp_list = data["temp"].to_list()
+print(temp_list)
+
+# finding average temperature
+average = sum(temp_list) / len(temp_list)
+print(average)
+
+# finding average temperature with series methods
+print(data["temp"].mean())
